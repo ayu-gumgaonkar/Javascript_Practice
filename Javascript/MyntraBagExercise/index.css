@@ -1,0 +1,23 @@
+#AddToBag
+{
+  background-color: lightgreen;
+  border: none;
+  padding: 50px , 100px;
+  border-radius: 20px;
+}
+
+#MoveToWishlist
+{
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 20px , 70px;
+  border-radius: 8px;
+}
+
+#AddItemSale
+{
+  background-color: lightgreen;
+  padding: 50px , 100px;
+  border: none;
+  border-radius: 20px;
+}

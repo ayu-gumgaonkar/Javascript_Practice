@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Function Exercise</title>
+</head>
+<style>
+  .btnSubscribe{
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  .js-doubleButtonSize{
+    font-size: 40px;
+    height: 80px;
+    width: 200px;
+  }
+</style>
+<body>
+
+  <button class="btnSubscribe">Subscribe</button>
+  <script>
+
+    // Make a Function which multiply two numbers
+    // let multiply = (num1,num2) => num1 * num2;
+    // console.log(multiply(4,5));
+
+    // Make the Function which calls two times
+    // let printGreeting = () => console.log('Namaste');
+
+    // let runTwice = inputFunction => {
+    //   inputFunction();
+    //   inputFunction();
+    // };
+    // runTwice(printGreeting);
+
+    // Add a Subscribe button and when clicked it doubles its size
+
+    function doubleButton(){
+    let buttonElement = document.querySelector('.btnSubscribe');
+    buttonElement.classList.add('js-doubleButtonSize');
+    }
+
+
+    // Add EventListener instead of onclick 
+    let buttonElement = document.querySelector('.btnSubscribe');
+    buttonElement.addEventListener('click' ,event => setTimeout(doubleButton,2000));
+
+      // Using Foreach loop 
+
+      let arr = [1,4,5,6,9,8,7,3];
+      let sum = 0;
+
+      arr.forEach(num => sum = sum + num);
+      console.log(sum);
+
+      // Sqaure of Array
+
+      let squares = arr.map(num => num*num);
+      console.log(squares);
+
+
+  </script>
+</body>
+</html>

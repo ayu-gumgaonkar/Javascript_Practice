@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Practice Exercise</title>
+</head>
+<body>
+  <script>
+
+    // Add or Remove the Array element
+    // let number = [5,6];
+    // number.push(7);
+    // number.unshift(9);
+    // console.log(number);
+    // number.pop(7);
+    // number.shift(9);
+    // console.log(number);
+
+    // find out the position of an Array
+    // function getElement(arr , position){
+    //   return arr[position-1];
+    // }
+    // let arr = [1,2,3,4,5,6,7,8,9,0]
+    // console.log(getElement(arr , 2));
+
+    // Using Slice Method in the Array 
+
+    // function arrCopy(){
+    //   return arr.slice(0,arr.length);
+    // }
+
+
+    // let arr = [4,7,8,9,5];
+    // arr2 = arrCopy(arr);
+    // arr2[0]= null;
+    // console.log(arr);
+    // console.log(arr2);
+
+
+  //   let arr = [4,5,6,7,8];
+  //  console.log(arr.slice(1,4));
+
+
+  // Finding out the first five Prime number.
+
+  // function isPrime(number){
+  //   for( let i= 2; i < number; i++)
+  //   {
+  //     if(number % i === 0){
+  //     return false;
+  //     }
+  //   }
+  //   return true;
+  // }
+
+  // let number = 2;
+  // let i = 0;
+
+  // while(true){
+  //  if (isPrime(number)){
+  //   console.log(number);
+  //   i++;
+  //   if(i >= 5)
+  //   {
+  //     break;
+  //   }
+  //   }
+  //   number++;
+  // }
+
+
+  // Print 1 to 10 number in the reverse order.
+
+  // for(let  i=10; i > 0; i--){
+  //   console.log(i);
+  // }
+
+  // for( let i =0; i < 10; i++){
+  //   console.log(10-i);
+  // }
+
+
+  // Print Positive number
+
+  // let arr = [1,-6,5,7,-98];
+
+  // for ( let i=0; i < arr.length; i++){
+  //   if(arr[i]< 0)continue;
+  //   {
+  //     console.log(arr[i]);
+  //   }
+  // }
+
+
+  // Accumulate the given array
+
+  let array =['KG','Coding','Javascript','Course','is','best'];
+  let result = 0;
+
+  for(i = 0; i < array.length; i++){
+    result += array[i] + ' ';
+  } 
+  console.log(result);
+
+  </script>
+</body>
+</html>

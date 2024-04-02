@@ -1,0 +1,30 @@
+.container{
+border: 2px solid rgb(129, 128, 128);
+width: 10%;
+border-radius: 5px;
+}
+#display{
+  border: 2px solid rgb(194, 173, 173);
+  border-radius: 2px;
+  width: 80%;
+  margin: 10px;
+  height: 30px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  padding: 20px , 20px;
+  flex-wrap: wrap;
+}
+
+.button
+{
+margin: 5px;
+display: flex;
+justify-content: center;
+width: 30px;
+padding-top: 5px;
+height: 30px;
+
+}

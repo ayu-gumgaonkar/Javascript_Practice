@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects Exercise</title>
+</head>
+<body>
+  <script>
+    let product = {
+      name : 'Tshirt',
+      price : 900,
+      size : 'M',
+      color : 'Black',
+      'delivery-time' : 'After 3 Days',
+     
+    };
+
+    let copyProduct = product;
+    console.log(product);
+
+    copyProduct.color = 'White';
+    console.log(product);
+
+    copyProduct.price = 800;
+    console.log(product);
+
+    copyProduct.size = 'XL';
+    console.log(product);
+
+    console.log(product['delivery-time'])
+
+    let product2 = {
+      message : 'Good Job',
+      status : 'complete',
+    };
+    console.log(product2);
+    // Destructuring 
+
+    let message = product2.message;
+     console.log(message);
+
+
+     function IsIdenticalProduct(product,product2){
+      if(typeof product == 'object' && typeof product2 == 'object'){
+        return true;
+      }
+
+      if(product === product2){
+        return true;
+      }
+
+      if (product !== product2){
+        console.warn('Parameter passed was not an object');
+        return false;
+      }
+
+      if((product.name === product2.name) && (product.price === product2.price) && (product.size === product2.size) && (product.color === product2.color)){
+        return true;
+      }
+      else{
+        return false;
+      }
+     }
+
+
+     console.log(IsIdenticalProduct(product , product2))
+     
+
+  </script>
+</body>
+</html>
